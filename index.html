@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tosh • Qaychi • Qog‘oz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="game-container">
+        <header class="header">
+            <div class="logo">✊</div>
+            <h1>TOSH <span>QAYCHI</span> QOG‘OZ</h1>
+            <p>Do‘stlaring bilan bellash!</p>
+        </header>
+
+        <section class="profile">
+            <div class="avatar">👤</div>
+            <div>
+                <h3 id="player-name">Mehmon</h3>
+                <p>O‘yinga xush kelibsiz!</p>
+            </div>
+        </section>
+
+        <section class="menu">
+            <h2>O‘yin rejimini tanlang</h2>
+
+            <button class="mode-card" id="computer-mode">
+                <span class="mode-icon">🤖</span>
+                <span class="mode-info">
+                    <strong>Kompyuterga qarshi</strong>
+                    <small>Kompyuter bilan bellash</small>
+                </span>
+                <span class="arrow">→</span>
+            </button>
+
+            <button class="mode-card" id="online-mode">
+                <span class="mode-icon">🌐</span>
+                <span class="mode-info">
+                    <strong>Onlayn o‘yin</strong>
+                    <small>Haqiqiy o‘yinchilar bilan</small>
+                </span>
+                <span class="arrow">→</span>
+            </button>
+        </section>
+
+        <section class="game hidden" id="game-section">
+            <button id="back-button" class="back-button">← Orqaga</button>
+
+            <h2 id="game-title">Kompyuterga qarshi</h2>
+            <div class="score">
+                <div>
+                    <span id="player-score">0</span>
+                    <small>Siz</small>
+                </div>
+                <strong>:</strong>
+                <div>
+                    <span id="computer-score">0</span>
+                    <small>Kompyuter</small>
+                </div>
+            </div>
+
+            <p class="instruction">Tanlovingizni amalga oshiring</p>
+
+            <div class="choices">
+                <button class="choice" data-choice="rock" aria-label="Tosh">✊</button>
+                <button class="choice" data-choice="paper" aria-label="Qog‘oz">✋</button>
+                <button class="choice" data-choice="scissors" aria-label="Qaychi">✌️</button>
+            </div>
+
+            <div id="result" class="result" aria-live="polite">
+                O‘yin boshlanishini kutmoqda...
+            </div>
+
+            <div id="challenge" class="challenge hidden"></div>
+        </section>
+
+        <footer>
+            <p>🎮 Omad tilaymiz!</p>
+        </footer>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
